@@ -1,0 +1,38 @@
+.fix-a{
+    text-decoration: none; 
+    color: #ffff;
+  }
+
+  .blank{
+    background-color: #aaa;
+    height: 1000px;
+  }
+  .blank2{
+    background-color: red;
+    height: 100px;
+  }
+  .header{
+   
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+    
+  }
+
+
+
+
+  
+
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 100px;
+  }
